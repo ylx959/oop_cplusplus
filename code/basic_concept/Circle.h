@@ -20,4 +20,10 @@ class Circle{
                 return 0;
             }
         }
+        Circle copy(){
+            Circle c;
+            c.radius=radius;
+            return c;
+        }
+        
 };

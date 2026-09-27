@@ -17,7 +17,8 @@ int main(){
     // c1=c2;
     // cout<<"c1:after: "<<&c1<<endl;
 
-    int i=c1.compare(c2);
+    //compare:
+    int i=c1.compare(c2);//注意compare function 是把c2 值複製出去跟c1做比對所以就算 在compare 中改動c2值 也不會有任何實質改動
 
     if(i==0){
         cout<<"the values are the same"<<endl;
@@ -27,6 +28,12 @@ int main(){
     }else{
         cout<<"c2 is bigger than c1"<<endl;
     }
+
+    //copy:
+    Circle c3;
+    c3=c1.copy();
+
+    cout<<"c3's radius:"<<c3.radius<<endl;
 
     return 0;
 }

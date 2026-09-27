@@ -154,3 +154,63 @@ objectName = otherObjectName;
 
 example:
   c1=c2;// 是把c2的變數複製給c1
+  但在java是c1 指向 c2物件
+
+- **物件變數參數**
+
+  函式原型：`void function(ClassName objectName)`
+
+  呼叫敘述：`function(objectName);`
+
+  在函式呼叫敘述的小括號中放物件變數時，是把本物件的成員變數的值，複製給函式的物件變數參數。
+
+- **物件變數返回值**
+
+  函式原型：`ClassName function()`
+
+  呼叫敘述：`ClassName objectName = function();`
+
+  ## 4. 物件指標
+
+**宣告**
+
+```cpp
+ClassName * pointerName;
+```
+
+Or
+
+```cpp
+ClassName * pointerName = new ClassName;
+```
+
+**建立物件**
+
+```cpp
+new ClassName
+new ClassName()
+```
+
+**指派**
+
+```cpp
+pointerName = memory address;
+```
+
+Ex:
+
+```cpp
+pointerName = new ClassName;
+```
+
+Or
+
+```cpp
+pointerName = &objectName;
+```
+
+Or
+
+```cpp
+pointerName = otherPointerName;
+```
