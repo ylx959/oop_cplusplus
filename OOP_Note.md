@@ -172,7 +172,7 @@ example:
 
   ## 4. 物件指標
 
-**宣告**
+- **宣告**
 
 ```cpp
 ClassName * pointerName;
@@ -184,14 +184,14 @@ Or
 ClassName * pointerName = new ClassName;
 ```
 
-**建立物件**
+- **建立物件**
 
 ```cpp
 new ClassName
 new ClassName()
 ```
 
-**指派**
+- **指派**
 
 ```cpp
 pointerName = memory address;
@@ -214,3 +214,20 @@ Or
 ```cpp
 pointerName = otherPointerName;
 ```
+
+- **成員存取**
+
+  `pointerName->dataMember`  
+  `pointerName->memberFunction()`
+
+  用「指標 → 成員」的方式，存取物件成員。
+
+- **物件指標參數**
+
+  函式原型：`void function(ClassName* pointer)`  
+  呼叫敘述：`function(memory address)`
+
+- **物件指標返回值**
+
+  函式原型：`ClassName* function()`  
+  呼叫敘述：`ClassName* pointer = function();`
