@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/yanglinxuan/Documents/oop_cplusplus/code/basic_concept",
-      "program": "/Users/yanglinxuan/Documents/oop_cplusplus/code/basic_concept/build/Debug/outDebug"
+      "cwd": "/Users/yanglinxuan/Documents/oop_cplusplus/code/advanced",
+      "program": "/Users/yanglinxuan/Documents/oop_cplusplus/code/advanced/build/Debug/outDebug"
     }
   ]
 }

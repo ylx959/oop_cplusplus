@@ -19,7 +19,8 @@ int main(){
     cout<<c1.compare3(c2)<<endl;//要給已存在物件 不會複製一份 會給記憶體位置
     */
 
-    /*Circle c1,c2;
+    /*
+    Circle c1,c2;
     c1.radius=20;
     c1.copy4(c2);
     cout<<c1.compare3(c1.copy4(c2))<<endl;
@@ -53,7 +54,7 @@ int main(){
     c1.radius=10;
     Circle *pc1=new Circle();
     pc1->radius=20;
-    cout<<c1.compare4(c1.copy5(pc1))<<endl;
+    cout<<c1.compare4(c1.copy5(pc1))<<endl;//compare4,copy5
     cout<<pc1->radius<<endl;
 
 
