@@ -75,6 +75,10 @@ public:
             c.radius=radius;
             return c;
         }
+        Circle *&copy5(Circle *&c){
+            c->radius=radius;
+            return c;
+        }
         
         
 };
