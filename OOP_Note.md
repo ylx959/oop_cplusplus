@@ -231,3 +231,28 @@ pointerName = otherPointerName;
 
   函式原型：`ClassName* function()`  
   呼叫敘述：`ClassName* pointer = function();`
+
+### 5. 物件變數參考
+
+   - **宣告**  
+     `ClassName & referenceName = objectName;`
+
+   - **物件變數參考參數**  
+     函式原型：`void function(ClassName & referenceName)`  
+     呼叫敘述：`function(objectName)`
+
+   - **物件變數參考返回值**  
+     函式原型：`ClassName & function(ClassName & referenceName)`  
+     呼叫敘述：`function(objectName)`
+### 6. 物件指標參考
+
+   - **宣告**  
+     `ClassName *& referenceName = pointerName;`
+
+   - **物件指標參考參數**  
+     函式原型：`void function(ClassName *& referenceName)`  
+     呼叫敘述：`function(pointerName)`
+
+   - **物件指標參考返回值**  
+     函式原型：`*&ClassName function(ClassName *& referenceName)`  
+     呼叫敘述：`function(pointerName)`

@@ -7,6 +7,9 @@ private:
 public:
         int radius;
         int height;
+        double getArea(){
+            return radius*radius*3.14;
+        }
         double getGirth(){
             return radius *2*3.14;
         }
@@ -34,6 +37,28 @@ public:
                 return 0;
             }
         }
+        int compare3(Circle &rc){
+            if(radius>rc.radius){
+                return 1;
+            }
+            else if(radius<rc.radius){
+                return -1;
+            }
+            else{
+                return 0;
+            }
+        }
+        int compare4(Circle *&rpc){
+            if(radius>rpc->radius){
+                return 1;
+            }
+            else if(radius<rpc->radius){
+                return -1;
+            }
+            else{
+                return 0;
+            }
+        }
         Circle copy(){
             Circle c;
             c.radius=radius;
@@ -46,5 +71,10 @@ public:
             pc->radius=radius;
             return pc;
         }
+        Circle &copy4(Circle &c){
+            c.radius=radius;
+            return c;
+        }
+        
         
 };
