@@ -2,11 +2,12 @@
 class Circle{
     int radius;
     public:
-        void setRadius(int r);
+        void setRadius(int radius);
         int getRadius();
         
-        Circle(int radius=0){
-            this->radius=radius;
+        Circle(int radius){//constructor
+            this->radius=0;
+            setRadius(radius);
         }
 }; 
 
@@ -14,9 +15,9 @@ int Circle ::getRadius(){
     return radius;
 }
 
-void Circle ::setRadius(int r){
-    if(r>=0 && r<=100){
-        radius=r;
+void Circle ::setRadius(int radius){
+    if(radius>=0 && radius<=100){
+        this->radius=radius;
     }
 }
 
@@ -25,21 +26,23 @@ class Rectangle{
     int width;
     int length;
     public:
-    Rectangle(int a=0,int b=0){
-        length=a;
-        width=b;
+    Rectangle(int width,int length){
+        this->width=width;
+        this->length=length;
+        setWidth(width);
+        setLength(length);
     }
-    void setLength(int l);
-    void setWidth(int w);
+    void setLength(int length);
+    void setWidth(int width);
     int getLength();
     int getWidth();
 };
 
-void Rectangle:: setLength(int l){
-    length=l;
+void Rectangle:: setLength(int length){
+    this->length=length;
 }
-void Rectangle::setWidth(int w){
-    width=w;
+void Rectangle::setWidth(int width){
+    this->width=width;
 }
 int Rectangle::getLength(){
     return length;
