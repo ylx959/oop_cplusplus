@@ -1,3 +1,6 @@
+
+#include<iostream>
+using namespace std;
 #include "CShape.h"
 
 CShape::CShape()
@@ -21,5 +24,9 @@ double CShape::getArea() {
 }
 void CShape::setArea(double value) {
     area = value;
+}
+void CShape:: showInfo(){
+    cout<<"CShape's area:"<<getArea()<<endl;
+    cout<<"CShape's girth:"<<getGirth()<<endl;
 }
 

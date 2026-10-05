@@ -13,11 +13,11 @@ Date: 2026/10/5
 class CCircle :public CShape{
 public:
     CCircle();
-    ~CCircle();
+    virtual~CCircle();
 
     int getRadius();
     void setRadius(int value);
-
+    virtual void showInfo();
 private:
     int radius;
 };
