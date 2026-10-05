@@ -1,16 +1,25 @@
+/* --- CCircle.h --- */
+
+/* ------------------------------------------
+Author: undefined
+Date: 2026/10/5
+------------------------------------------ */
+
 #ifndef CCIRCLE_H
 #define CCIRCLE_H
 
-#pragma once
+#include"CShape.h"
 
-class CCircle
-{
+class CCircle :public CShape{
 public:
     CCircle();
     ~CCircle();
 
+    int getRadius();
+    void setRadius(int value);
+
 private:
-    
+    int radius;
 };
 
-#endif
+#endif // CCIRCLE_H

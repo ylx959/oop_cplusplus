@@ -13,12 +13,13 @@ CShape::~CShape()
 double CShape::getGirth() {
     return girth;
 }
-void CShape::setGirth(double& value) {
+void CShape::setGirth(double value) {
     girth = value;
 }
 double CShape::getArea() {
     return area;
 }
-void CShape::setArea(double& value) {
+void CShape::setArea(double value) {
     area = value;
 }
+

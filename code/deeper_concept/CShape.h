@@ -7,18 +7,16 @@ class CShape
 {
 public:
     CShape();
-    ~CShape();
-
+    virtual ~CShape();
+ 
     double getGirth();
+    void setGirth(double value);
     double getArea();
-    
-protected:
-    void setGirth(double& value);
-    void setArea(double& value);
+    void setArea(double value);
 
 private:
     double girth;
-    double area;
+    double  area;
 };
 
 #endif
