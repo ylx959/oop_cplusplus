@@ -1,0 +1,10 @@
+# 編譯產物
+build/
+*.o
+a.out
+
+# 含個人路徑、會被工具自動改寫
+.vscode/launch.json
+
+# macOS
+.DS_Store
