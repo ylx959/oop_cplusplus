@@ -71,26 +71,27 @@ int main(){
     // showArea(&cc);
     // showArea(&cr);
 
-    /*CShape cs;
-    cout<<cs.getArea()<<endl;
+    // CShape cs;
+    // cout<<cs.getArea()<<endl;
 
-    CCircle cc;
-    cc.setRadius(10);
-    cout<<cc.getRadius()<<endl;
+    // CCircle cc;
+    // cc.setRadius(10);
+    // cout<<cc.getRadius()<<endl;
 
-    cout<<"-----"<<endl;
+    // cout<<"-----"<<endl;
 
-    cs=cc;
-    cout<<cs.getArea()<<endl;
-    cc.setRadius(100);
+    // cs=cc;
+    // cout<<cs.getArea()<<endl;
+    // cc.setRadius(100);
 
-    cout<<cc.getArea()<<endl;
-    cout<<cs.getArea()<<endl;
+    // cout<<cc.getArea()<<endl;
+    // cout<<cs.getArea()<<endl;
 
-    cout<<cs.getGirth()<<endl;
-    cout<<cc.getGirth()<<endl;
-    */
+    // cout<<cs.getGirth()<<endl;
+    // cout<<cc.getGirth()<<endl;
+    
 
 
     return 0;
+
 }

@@ -13,7 +13,7 @@ public:
     void setGirth(double value);
     double getArea();
     void setArea(double value);
-    virtual void showInfo();
+    virtual void showInfo()=0;
 private:
     double girth;
     double  area;

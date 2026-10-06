@@ -2,19 +2,9 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "type": "cppbuild",
-      "label": "C/C++: clang++ build all .cpp in folder",
-      "command": "/usr/bin/clang++",
-      "args": [
-        "-std=c++17",
-        "-fcolor-diagnostics",
-        "-fansi-escape-codes",
-        "-Wall",
-        "-g",
-        "${fileDirname}/*.cpp",
-        "-o",
-        "${fileDirname}/${fileBasenameNoExtension}"
-      ],
+      "type": "shell",
+      "label": "C/C++: build current example",
+      "command": "/usr/bin/clang++ -std=c++17 -fcolor-diagnostics -fansi-escape-codes -Wall -g \"${file}\" $(ls *.cpp | grep -v '^example') -o \"${fileBasenameNoExtension}\"",
       "options": {
         "cwd": "${fileDirname}"
       },
@@ -23,7 +13,7 @@
         "kind": "build",
         "isDefault": true
       },
-      "detail": "編譯目前檔案所在資料夾的所有 .cpp"
+      "detail": "編譯目前的 example 檔 + 資料夾中非 example 開頭的 .cpp"
     }
   ]
 }
