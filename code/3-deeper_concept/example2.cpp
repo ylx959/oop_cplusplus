@@ -33,8 +33,10 @@ void doubleShape(CShape *pcs){
         pcc->setRadius(pcc->getRadius()*2);
         return;
     }
+    
     CRectangle *pcr=dynamic_cast<CRectangle*>(pcs);
     if(pcr!=0){
         pcr->setValues(pcr->getLength(),pcr->getWidth());
+        return;
     }
 }

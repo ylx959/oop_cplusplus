@@ -32,6 +32,10 @@ int main(){
     pcs->showInfo();
 
     //是執行父類別內容
+    // CCircle c;
+    // c.setRadius(100);
+    // CShape *pcs=&c;
+    // CShape &rcs=c;
     // cout<<pcs->getArea()<<endl;
     // cout<<rcs.getGirth()<<endl;
     // cout<<"------"<<endl;

@@ -17,7 +17,7 @@ public:
 
     int getRadius();
     void setRadius(int value);
-    virtual void showInfo();
+    virtual void showInfo ();
 private:
     int radius;
 };
