@@ -1,6 +1,8 @@
 # OOP in C++
 
-A repo for learning object-oriented programming (OOP) in C++, with example code and comprehensive concept notes.
+A repo for learning object-oriented programming (OOP) in C++, with source code and comprehensive concept notes.
+
+You can also check out my [OOP article](https://ylx-studio.com/articles/oop) for a better reading experience and more interactive demonstrations!
 
 ## Structure
 
